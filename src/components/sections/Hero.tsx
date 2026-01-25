@@ -62,13 +62,12 @@ export default function Hero() {
 
       <Container className="relative pt-32 pb-20 md:pt-40 md:pb-32">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16 items-start">
-          {/* Left content - with scroll animation */}
+          {/* Left content - NO scroll animation on mobile */}
           <motion.div 
-            style={{ y, opacity }}
             variants={staggerSlow} 
             initial="hidden" 
             animate="show" 
-            className="space-y-8"
+            className="space-y-8 order-last lg:order-first"
           >
 
 
@@ -136,11 +135,11 @@ export default function Hero() {
             variants={scaleUp}
             initial="hidden"
             animate="show"
-            className="hidden lg:block"
+            className="order-first lg:order-last"
           >
             {/* Profile Image Card */}
             <motion.div 
-              className="relative group sticky top-32"
+              className="relative group lg:sticky lg:top-32 max-w-xs mx-auto lg:max-w-none"
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
