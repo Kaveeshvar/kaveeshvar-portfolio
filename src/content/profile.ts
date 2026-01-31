@@ -32,6 +32,16 @@ export const profile = {
         "Co-manage a cohort of 20 biology experts; focused on operational excellence by improving processes and workflows to enhance output and efficiency.",
       ],
     },
+    {
+      role: "Technical Support and Data Analyst",
+      company: "Prep-Ally Educational Services.",
+      period: "July ’25 - Nov ’25 (Part time)", //July ’25 - Nov ’25
+      bullets: [
+        "Designed and implemented end-to-end automation solutions for exam management, data processing, and reporting using Google Apps Script and Google Sheets.",
+        "Built and optimized dashboards, validation workflows, and large-scale data audits to support academic operations and decision-making. ",         
+        "Collaborated closely with stakeholders to translate operational requirements into scalable, reliable technical systems, improving efficiency and accuracy.",
+      ],
+    },
   ],
   internship: [
     {

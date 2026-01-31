@@ -6,24 +6,6 @@ import { Card } from "../ui/Card";
 import { motion } from "framer-motion";
 import { fadeUp, fadeUpScale, stagger } from "@/lib/motion";
 
-const skillLevels: Record<string, number> = {
-  "LLMs and Chatbots": 95,
-  "LLM Evaluation": 90,
-  "Prompt Engineering": 92,
-  "Python": 85,
-  "C": 70,
-  "C++": 70,
-  "PHP": 75,
-  "JavaScript": 80,
-  "HTML/CSS/JS": 85,
-  "MySQL": 78,
-  "Web App Development": 82,
-  "Leadership": 90,
-  "Time Management": 88,
-  "Problem Solving": 92,
-  "Adaptability": 90,
-};
-
 const categoryIcons: Record<string, string> = {
   "AI/ML/Data": "🤖",
   "Programming Languages": "💻",
@@ -31,11 +13,27 @@ const categoryIcons: Record<string, string> = {
   "Soft Skills": "🎯",
 };
 
-const categoryGradients: Record<string, string> = {
-  "AI/ML/Data": "from-cyan-500 to-blue-500",
-  "Programming Languages": "from-violet-500 to-purple-500",
-  "Web/DB": "from-pink-500 to-rose-500",
-  "Soft Skills": "from-emerald-500 to-teal-500",
+const categoryGradients: Record<string, { border: string; bg: string; text: string }> = {
+  "AI/ML/Data": {
+    border: "border-cyan-500/30",
+    bg: "bg-cyan-500/10",
+    text: "text-cyan-300",
+  },
+  "Programming Languages": {
+    border: "border-violet-500/30",
+    bg: "bg-violet-500/10",
+    text: "text-violet-300",
+  },
+  "Web/DB": {
+    border: "border-pink-500/30",
+    bg: "bg-pink-500/10",
+    text: "text-pink-300",
+  },
+  "Soft Skills": {
+    border: "border-emerald-500/30",
+    bg: "bg-emerald-500/10",
+    text: "text-emerald-300",
+  },
 };
 
 export default function Skills() {
@@ -78,55 +76,39 @@ export default function Skills() {
             variants={stagger}
             className="grid gap-8 md:grid-cols-2"
           >
-            {groups.map(([category, skills]) => (
-              <motion.div key={category} variants={fadeUpScale}>
-                <Card className="p-8 md:p-10 h-full" hover>
-                  {/* Category header */}
-                  <div className="flex items-center gap-3 mb-8">
-                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${categoryGradients[category]}/20 flex items-center justify-center text-2xl`}>
-                      {categoryIcons[category]}
+            {groups.map(([category, skills]) => {
+              const colors = categoryGradients[category];
+              return (
+                <motion.div key={category} variants={fadeUpScale}>
+                  <Card className="p-8 md:p-10 h-full" hover>
+                    {/* Category header */}
+                    <div className="flex items-center gap-3 mb-8">
+                      <div className={`w-12 h-12 rounded-xl ${colors.bg} border ${colors.border} flex items-center justify-center text-2xl`}>
+                        {categoryIcons[category]}
+                      </div>
+                      <h3 className="text-lg font-semibold">{category}</h3>
                     </div>
-                    <h3 className="text-lg font-semibold">{category}</h3>
-                  </div>
 
-                  {/* Skills list */}
-                  <div className="space-y-6">
-                    {skills.map((skill, index) => {
-                      const level = skillLevels[skill] || 75;
-                      return (
-                        <motion.div 
+                    {/* Skills tags */}
+                    <div className="flex flex-wrap gap-3">
+                      {skills.map((skill, index) => (
+                        <motion.span
                           key={skill}
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
                           viewport={{ once: true }}
-                          transition={{ delay: index * 0.05, duration: 0.5 }}
+                          transition={{ delay: index * 0.05, duration: 0.4 }}
+                          whileHover={{ scale: 1.05, y: -2 }}
+                          className={`px-4 py-2.5 rounded-xl border ${colors.border} ${colors.bg} ${colors.text} text-sm font-medium backdrop-blur-sm transition-colors hover:border-opacity-50`}
                         >
-                          <div className="flex items-center justify-between mb-2">
-                            <span className="text-sm font-medium">{skill}</span>
-                            <span className="text-xs text-muted-foreground">{level}%</span>
-                          </div>
-                          
-                          {/* Progress bar */}
-                          <div className="h-2 w-full rounded-full bg-white/5 overflow-hidden">
-                            <motion.div
-                              className={`h-full rounded-full bg-gradient-to-r ${categoryGradients[category]}`}
-                              initial={{ width: 0 }}
-                              whileInView={{ width: `${level}%` }}
-                              viewport={{ once: true }}
-                              transition={{ 
-                                duration: 1.2, 
-                                delay: index * 0.05,
-                                ease: [0.16, 1, 0.3, 1] 
-                              }}
-                            />
-                          </div>
-                        </motion.div>
-                      );
-                    })}
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
+                          {skill}
+                        </motion.span>
+                      ))}
+                    </div>
+                  </Card>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </motion.div>
       </Container>
