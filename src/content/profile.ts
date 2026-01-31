@@ -53,15 +53,17 @@ export const profile = {
       tech: ["PHP", "CSS", "JavaScript", "Firebase", "Google Books API"],
       role: "Front-End Developer",
       highlight: "Hackathon-winning build 🏆",
+      video: null,
     },
     {
       title: "Retail Car Price Prediction with Damage Detection",
-      period: "Nov ’22 - Dec ’22",
+      period: "Nov '22 - Dec '22",
       description:
         "Developed a web-based ML model that predicts retail car price. Takes user inputs about the car and images to predict price.",
       tech: ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
       role: "Frontend Developer",
       highlight: "ML + web UX integration",
+      video: "/videos/retail-car-price.mp4",
     },
   ],
   skills: {

@@ -9,13 +9,17 @@ interface CardProps {
   hover?: boolean;
   glow?: boolean;
   gradient?: boolean;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
-export function Card({ className, children, hover = false, glow = false, gradient = false }: CardProps) {
+export function Card({ className, children, hover = false, glow = false, gradient = false, onMouseEnter, onMouseLeave }: CardProps) {
   return (
     <motion.div
       whileHover={hover ? { y: -8, scale: 1.01 } : undefined}
       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       className={cn(
         "relative rounded-2xl overflow-hidden",
         "bg-white/[0.03] dark:bg-white/[0.03]",
