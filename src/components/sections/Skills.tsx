@@ -7,29 +7,35 @@ import { motion } from "framer-motion";
 import { fadeUp, fadeUpScale, stagger } from "@/lib/motion";
 
 const categoryIcons: Record<string, string> = {
-  "AI/ML/Data": "🤖",
-  "Programming Languages": "💻",
-  "Web/DB": "🌐",
-  "Soft Skills": "🎯",
+  "Languages & Runtime": "💻",
+  "Frontend": "🎨",
+  "Backend & APIs": "⚙️",
+  "AI / Data": "🤖",
+  "Tools": "🛠️",
 };
 
 const categoryGradients: Record<string, { border: string; bg: string; text: string }> = {
-  "AI/ML/Data": {
-    border: "border-cyan-500/30",
-    bg: "bg-cyan-500/10",
-    text: "text-cyan-300",
-  },
-  "Programming Languages": {
+  "Languages & Runtime": {
     border: "border-violet-500/30",
     bg: "bg-violet-500/10",
     text: "text-violet-300",
   },
-  "Web/DB": {
+  "Frontend": {
     border: "border-pink-500/30",
     bg: "bg-pink-500/10",
     text: "text-pink-300",
   },
-  "Soft Skills": {
+  "Backend & APIs": {
+    border: "border-orange-500/30",
+    bg: "bg-orange-500/10",
+    text: "text-orange-300",
+  },
+  "AI / Data": {
+    border: "border-cyan-500/30",
+    bg: "bg-cyan-500/10",
+    text: "text-cyan-300",
+  },
+  "Tools": {
     border: "border-emerald-500/30",
     bg: "bg-emerald-500/10",
     text: "text-emerald-300",

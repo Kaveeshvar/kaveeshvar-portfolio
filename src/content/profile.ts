@@ -1,9 +1,9 @@
 export const profile = {
   name: "Kaveeshvar S",
   headline:
-    "Delivery Data Analyst & Pod Lead — LLM Evaluation, Prompt Engineering, Workflow Optimization",
+    "Full-Stack Engineer & Data Analyst — Agent-Driven Systems, LLM Evaluation, System Design",
   summary:
-    "Highly accomplished Data Analyst and Engineering graduate with 1+ years of full-time experience in LLM response evaluation, Prompt Engineering, and data-driven workflow optimization for major clients (Anthropic). Proven leader who successfully managed and co-managed teams up to 20 experts, driving significant increases in operational efficiency. Seeking a challenging role to leverage skills in AI/ML and process improvement.",
+    "Full-Stack Engineer & Data Analyst with experience building production-grade, agent-driven systems and interactive tools using modern web stacks. Hands-on experience with memory-based AI agents, API-driven architectures, and end-to-end deployment workflows. Strong background in LLM evaluation, system design, and cross-functional execution in enterprise AI environments.",
   contact: {
     phone: "+91 63825-97744",
     email: "kaveeshvar6@gmail.com",
@@ -25,62 +25,65 @@ export const profile = {
     {
       role: "Delivery Data Analyst & Pod Lead",
       company: "Turing Inc.",
-      period: "July ’24 - Current",
+      period: "July '24 - Current",
       bullets: [
-        "Contributed as a Data Analyst for client Anthropic: LLM response evaluation, code reviews, and prompt engineering.",
-        "Transitioned to Pod Lead: led and mentored a team of 4 to execute project objectives.",
-        "Co-manage a cohort of 20 biology experts; focused on operational excellence by improving processes and workflows to enhance output and efficiency.",
-      ],
-    },
-    {
-      role: "Technical Support and Data Analyst",
-      company: "Prep-Ally Educational Services.",
-      period: "July ’25 - Nov ’25 (Part time)", //July ’25 - Nov ’25
-      bullets: [
-        "Designed and implemented end-to-end automation solutions for exam management, data processing, and reporting using Google Apps Script and Google Sheets.",
-        "Built and optimized dashboards, validation workflows, and large-scale data audits to support academic operations and decision-making. ",         
-        "Collaborated closely with stakeholders to translate operational requirements into scalable, reliable technical systems, improving efficiency and accuracy.",
+        "Evaluated and analyzed LLM behavior across diverse tasks, focusing on reasoning quality, failure modes, and safety constraints.",
+        "Worked closely with AI systems to assess agent responses under varying prompt and context conditions.",
+        "Collaborated cross-functionally with AI and backend teams to refine evaluation criteria and feedback loops for model improvement.",
+        "Led a pod of analysts while maintaining hands-on involvement in model evaluation and quality benchmarking.",
       ],
     },
   ],
   internship: [
     {
-      role: "Project Intern — Frontend Developer",
+      role: "Front-End Developer Intern",
       company: "Ashok Leyland R&D Pvt Ltd",
-      period: "Apr ’23 - Apr ’24",
+      period: "Apr '23 - Apr '24",
       bullets: [
-        "Collaborated with a multidisciplinary R&D team to design and develop an AI chatbot tailored to organizational data.",
-        "Contributed across phases from conception to testing.",
+        "Built and deployed a full-stack interface for an internal AI-powered chatbot used in R&D workflows.",
+        "Integrated frontend components with backend APIs and AI model outputs for real-time interaction.",
+        "Worked on locally hosted LLM setup to support data privacy requirements.",
       ],
     },
   ],
   projects: [
     {
-      title: "Virtual Librarian",
-      period: "Feb ’23 - March ’23",
+      title: "Memory-Aware Chat Assistant",
+      period: "2026",
       description:
-        "Designed and implemented a web-based AI document search system, increasing efficiency in document retrieval for a digital library.",
-      tech: ["PHP", "CSS", "JavaScript", "Firebase", "Google Books API"],
-      role: "Front-End Developer",
-      highlight: "Hackathon-winning build 🏆",
+        "Designed and built a memory-aware conversational agent that stores, retrieves, and updates long-term conversation state using structured JSON memory. Implemented agent memory architecture enabling contextual recall across sessions. Deployed as a Vercel-ready production app with CI-friendly architecture.",
+      tech: ["JavaScript", "Node.js", "Web APIs", "JSON", "GitHub API", "Vercel"],
+      role: "Full-Stack Engineer",
+      highlight: "Production-Grade AI with Persistent Memory",
+      video: null,
+    },
+    {
+      title: "Turf-Finder",
+      period: "2025",
+      description:
+        "Built a CLI-based agent that interacts with real-world environments via Google Maps & Places APIs. Designed a tool-calling workflow where the agent accepts user intent, queries external APIs, parses structured responses, and returns ranked, actionable results.",
+      tech: ["Node.js", "JavaScript", "Google Maps API", "REST APIs"],
+      role: "Backend Engineer",
+      highlight: "Agent-Based CLI Tool Using External APIs",
       video: null,
     },
     {
       title: "Retail Car Price Prediction with Damage Detection",
-      period: "Nov '22 - Dec '22",
+      period: "2022",
       description:
-        "Developed a web-based ML model that predicts retail car price. Takes user inputs about the car and images to predict price.",
-      tech: ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
-      role: "Frontend Developer",
-      highlight: "ML + web UX integration",
+        "Built a web interface for a machine learning application that predicts retail car prices based on user inputs and uploaded images. Developed ML model using Flask API that processes car details and images to predict retail price.",
+      tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      role: "Frontend Engineer",
+      highlight: "ML-integrated application",
       video: "/videos/retail-car-price.mp4",
     },
   ],
   skills: {
-    "AI/ML/Data": ["LLMs and Chatbots", "LLM Evaluation", "Prompt Engineering"],
-    "Programming Languages": ["Python", "C", "C++", "PHP", "JavaScript"],
-    "Web/DB": ["HTML/CSS/JS", "MySQL", "Web App Development"],
-    "Soft Skills": ["Leadership", "Time Management", "Problem Solving", "Adaptability"],
+    "Languages & Runtime": ["JavaScript (ES6+)", "Python", "TypeScript", "C", "C++", "PHP"],
+    "Frontend": ["React", "HTML5", "CSS3"],
+    "Backend & APIs": ["Node.js", "REST APIs", "JSON-based systems", "Agent architectures"],
+    "AI / Data": ["LLM Evaluation", "Agent Memory Design", "Tool-Calling Agents", "Prompt Engineering"],
+    "Tools": ["Git", "GitHub", "Vercel", "Firebase", "Google APIs", "Docker"],
   },
   achievements: [
     {
