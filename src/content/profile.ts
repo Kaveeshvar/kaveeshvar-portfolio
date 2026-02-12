@@ -1,9 +1,9 @@
 export const profile = {
   name: "Kaveeshvar S",
   headline:
-    "Full-Stack Engineer & Data Analyst — Agent-Driven Systems, LLM Evaluation, System Design",
+    "Python-Focused AI Engineer & Data Analyst — Agent-Driven Systems, LLM Evaluation, System Design",
   summary:
-    "Full-Stack Engineer & Data Analyst with experience building production-grade, agent-driven systems and interactive tools using modern web stacks. Hands-on experience with memory-based AI agents, API-driven architectures, and end-to-end deployment workflows. Strong background in LLM evaluation, system design, and cross-functional execution in enterprise AI environments.",
+    "Python-focused AI Engineer and Data Analyst with experience building production-grade, agent-driven systems and enterprise AI solutions. Hands-on expertise in LLM evaluation, memory-aware agent design, API-driven architectures, and end-to-end deployment workflows. Proven ability to design, benchmark, and refine AI systems in cross-functional environments with a strong foundation in system design and scalable engineering practices.",
   contact: {
     phone: "+91 63825-97744",
     email: "kaveeshvar6@gmail.com",
@@ -17,7 +17,7 @@ export const profile = {
       meta: "CGPA: 7.8",
     },
     {
-      title: "XII (CBSE) | Bannari Amman Public School, Sathy.",
+      title: "XII (CBSE) | Bannari Amman Public School, Sathyamangalam.",
       meta: "Percentage: 81%",
     },
   ],
@@ -25,12 +25,22 @@ export const profile = {
     {
       role: "Delivery Data Analyst & Pod Lead",
       company: "Turing Inc.",
-      period: "July '24 - Current",
+      period: "July '24 - Feb '26",
       bullets: [
         "Evaluated and analyzed LLM behavior across diverse tasks, focusing on reasoning quality, failure modes, and safety constraints.",
         "Worked closely with AI systems to assess agent responses under varying prompt and context conditions.",
         "Collaborated cross-functionally with AI and backend teams to refine evaluation criteria and feedback loops for model improvement.",
         "Led a pod of analysts while maintaining hands-on involvement in model evaluation and quality benchmarking.",
+      ],
+    },
+    {
+      role: "Freelance Technical Support & Data Analyst",
+      company: "Prep-Ally Educational Services",
+      period: "July '25 - Nov '25",
+      bullets: [
+        "Delivered automation and reporting solutions for academic operations using Python, Google Apps Script, and Google Sheets.",
+        "Built dashboards and validation workflows to improve reporting accuracy and operational visibility.",
+        "Worked closely with management to understand requirements and translate them into scalable technical solutions.",
       ],
     },
   ],
@@ -49,9 +59,9 @@ export const profile = {
   projects: [
     {
       title: "Memory-Aware Chat Assistant",
-      period: "2026",
+      period: "2025",
       description:
-        "Designed and built a memory-aware conversational agent that stores, retrieves, and updates long-term conversation state using structured JSON memory. Implemented agent memory architecture enabling contextual recall across sessions. Deployed as a Vercel-ready production app with CI-friendly architecture.",
+        "Designed and built a memory-aware conversational agent that stores, retrieves, and updates long-term conversation state using structured JSON memory. Implemented agent memory architecture enabling contextual recall across sessions (stateful interactions).",
       tech: ["JavaScript", "Node.js", "Web APIs", "JSON", "GitHub API", "Vercel"],
       role: "Full-Stack Engineer",
       highlight: "Production-Grade AI with Persistent Memory",
@@ -71,19 +81,19 @@ export const profile = {
       title: "Retail Car Price Prediction with Damage Detection",
       period: "2022",
       description:
-        "Built a web interface for a machine learning application that predicts retail car prices based on user inputs and uploaded images. Developed ML model using Flask API that processes car details and images to predict retail price.",
-      tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      role: "Frontend Engineer",
-      highlight: "ML-integrated application",
+        "Built a web interface for a machine learning application that predicts retail car prices based on user inputs and uploaded images. As a team, developed an ML model using Flask API that processes car details and images to predict retail price.",
+      tech: ["Python", "HTML", "CSS", "JavaScript", "PHP"],
+      role: "Frontend Engineer (ML-integrated application)",
+      highlight: "Retail car price prediction",
       video: "/videos/retail-car-price.mp4",
     },
   ],
   skills: {
-    "Languages & Runtime": ["JavaScript (ES6+)", "Python", "TypeScript", "C", "C++", "PHP"],
+    "Languages & Runtime": ["JavaScript (ES6+)", "Python", "TypeScript (working knowledge)", "C", "C++", "PHP"],
     "Frontend": ["React", "HTML5", "CSS3"],
     "Backend & APIs": ["Node.js", "REST APIs", "JSON-based systems", "Agent architectures"],
     "AI / Data": ["LLM Evaluation", "Agent Memory Design", "Tool-Calling Agents", "Prompt Engineering"],
-    "Tools": ["Git", "GitHub", "Vercel", "Firebase", "Google APIs", "Docker"],
+    "Tools": ["Git", "GitHub", "Vercel", "Firebase", "Google APIs", "Docker (foundational understanding)"],
   },
   achievements: [
     {
