@@ -227,7 +227,7 @@ export default function Hero() {
                 
                 <div className="flex flex-wrap gap-x-8 gap-y-3">
                   {[
-                    { label: "LLM Evaluation", value: "1+ yrs", highlight: true },
+                    { label: "Delivery Data Analyst", value: "1+ yrs", highlight: true },
                     { label: "Leadership", value: "Pod Lead", highlight: false },
                     { label: "Team Scale", value: "Up to 20", highlight: false },
                   ].map((item) => (

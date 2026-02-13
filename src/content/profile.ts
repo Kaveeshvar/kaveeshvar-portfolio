@@ -1,9 +1,9 @@
 export const profile = {
   name: "Kaveeshvar S",
   headline:
-    "Python-Focused AI Engineer & Data Analyst — Agent-Driven Systems, LLM Evaluation, System Design",
+    "Python-Focused AI Engineer & Data Analyst — Agent-Driven Systems, LLM Tuning, System Design",
   summary:
-    "Python-focused AI Engineer and Data Analyst with experience building production-grade, agent-driven systems and enterprise AI solutions. Hands-on expertise in LLM evaluation, memory-aware agent design, API-driven architectures, and end-to-end deployment workflows. Proven ability to design, benchmark, and refine AI systems in cross-functional environments with a strong foundation in system design and scalable engineering practices.",
+    "Python-focused AI Engineer and Data Analyst with experience building production-grade, agent-driven systems and enterprise AI solutions. Hands-on expertise in LLM Data Training, memory-aware agent design, API-driven architectures, and end-to-end deployment workflows. Proven ability to design, benchmark, and refine AI systems in cross-functional environments with a strong foundation in system design and scalable engineering practices.",
   contact: {
     phone: "+91 63825-97744",
     email: "kaveeshvar6@gmail.com",
@@ -59,7 +59,7 @@ export const profile = {
   projects: [
     {
       title: "Memory-Aware Chat Assistant",
-      period: "2025",
+      period: "2026",
       description:
         "Designed and built a memory-aware conversational agent that stores, retrieves, and updates long-term conversation state using structured JSON memory. Implemented agent memory architecture enabling contextual recall across sessions (stateful interactions).",
       tech: ["JavaScript", "Node.js", "Web APIs", "JSON", "GitHub API", "Vercel"],
